@@ -1,0 +1,18 @@
+# 本地连续性记忆，不上传到公开仓库
+.recallloom/
+
+# 本地芯片手册资料，文档中保留文件名引用即可
+*.pdf
+*.PDF
+
+# 常见临时文件
+tmp/
+temp/
+*.log
+*.tmp
+
+# 系统和编辑器文件
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
