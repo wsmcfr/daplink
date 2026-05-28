@@ -11,6 +11,14 @@ temp/
 *.log
 *.tmp
 
+# Python 本地构建与测试产物
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
 # 系统和编辑器文件
 .DS_Store
 Thumbs.db

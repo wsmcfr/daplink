@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wdap-ota"
+version = "0.1.0"
+description = "Wireless DAP OTA host tool"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pyserial>=3.5",
+  "PySide6>=6.7",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+wdap-ota = "wdap_ota.cli:main"
+wdap-ota-gui = "wdap_ota.gui.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
